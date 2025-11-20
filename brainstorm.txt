@@ -1,0 +1,6 @@
+To do: 
+
+- kalkulator ting 1 og 2
+- string metoder : interaktiv boks med tekst og knapper som gjør ting 
+    uppercase/lowercase, arrays som vises med loop kanskje osv.
+- string metoder - list opp "resten"
