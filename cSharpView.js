@@ -3,6 +3,7 @@
 function drawCSharpPage(){
     let html = /*HTML*/`
     <div class="notesPage">
+        <div class="notesHeader">C# </div>
         <div class="menu">
             <b>examples</b><br>
             <button class="menuButton" onclick="">incoming</button><br>

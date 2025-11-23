@@ -1,23 +1,38 @@
 div.notesPage {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1fr; 
-    grid-template-areas: 'menu notes';
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-rows: auto 1fr; 
+    grid-template-areas:    'LMargin notesHeader notesHeader RMargin'
+                            'LMargin menu notes RMargin';
 
+}
+
+div.notesHeader {
+    grid-area: notesHeader;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 div.menu {
     grid-area: menu;
-    margin-left: 5px;
-    margin-right: 5px;
     padding: 5px;
     border-radius: 10px;
-    border: black solid 2px;
+    border: #cacac2 solid 1px;
 }
 
 div.notes {
     grid-area: notes; 
+    max-width: 400px;
+    /* padding: 5px; */
+}
 
+div.notesRMargin {
+    grid-area: RMargin;
+}
+
+div.notesLMargin {
+    grid-area: LMargin;
 }
 
 button.menuButton {
@@ -35,10 +50,9 @@ button.menuButton:hover {
 }
 
 section {
-    border: black solid 2px;
+    border: #cacac2 solid 1px;
     border-radius: 5px;
-    margin: 5px;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 span {

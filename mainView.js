@@ -45,15 +45,15 @@ function drawHeader(){
 }
 
 function drawFooter(){
-    let html = `latest update: 20.11.2025 by Lidus`;
+    let html = `latest update: 23.11.2025 by Lidus`;
 
     return html;
 }
 
 function drawHomePage(){
-    let html = `homePage (not at all finished) <br>
+    let html = `homePage<br>
     - navigate to notes via buttons above <br>
-    - updates in update log
+    - running updates in update log
     `;
 
     return html;

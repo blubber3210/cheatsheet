@@ -1,6 +1,7 @@
 function drawJSView(){
     let html =/*HTML*/ `
     <div class="notesPage">
+        <div class="notesHeader">javascript </div>
         <div class="menu">
             <b>examples</b><br>
             <button class="menuButton" onclick="fontsExampleHtml()">fonts</button><br>
@@ -32,6 +33,9 @@ function drawJSView(){
                 <a href="https://getacademy.moodlecloud.com/mod/wiki/view.php?id=1212">Moodle oversikt</a>
             </section>
         </div>
+        
+        <div class="notesRMargin"></div>
+        <div class="notesLMargin"></div>
     </div>
     `;
 
@@ -133,10 +137,12 @@ function scopeHtml(){
     <b>Scope</b>
     <p>
     There are three types of scope: <br>
-    <li>global scope</li>
-    <li>function scope</li>
-    <li>block scope</li>
-    </p>
+    <ul>
+        <li>global scope</li>
+        <li>function scope</li>
+        <li>block scope</li>
+    </ul>
+        </p>
     <p>
     <b>Global: </b>Var, let and const are all global if declared outside of a block. Global variables can be accessed from anywhere in a JS program. <br>
     <br>
@@ -277,12 +283,14 @@ function dataTypeHtml(){
     <br><b>heltall:</b> -3, -2, -1, 0, 1, 2, 3 osv<br>
     <br>
     <b>aritmatiske operatorer:</b>
-    <li>addisjon: <b>+</b></li>
-    <li>subtraksjon: <b>-</b></li>
-    <li>multiplikasjon: <b>*</b></li>
-    <li>divisjon: <b>/</b></li>
-    <li>øke med 1: <b>++</b></li>
-    <li>redusere med 1: <b>--</b></li> <br>
+    <ul>
+        <li>addisjon: <b>+</b></li>
+        <li>subtraksjon: <b>-</b></li>
+        <li>multiplikasjon: <b>*</b></li>
+        <li>divisjon: <b>/</b></li>
+        <li>øke med 1: <b>++</b></li>
+        <li>redusere med 1: <b>--</b></li>
+    </ul>
     <b>eksempel1:</b><br>
     <span>
     let a = 0; <br>
@@ -302,12 +310,13 @@ function dataTypeHtml(){
 
     <b>tilordningsoperatører:</b> (pluss/minus/gange erlik seg selv.)<br>
     <b>
-    <li>=</li>
-    <li>+=</li>
-    <li>-=</li>
-    <li>*=</li>
-    <li>/*</li> 
-    <br>
+    <ul>   
+        <li>=</li>
+        <li>+=</li>
+        <li>-=</li>
+        <li>*=</li>
+        <li>/*</li> 
+    </ul>
     eksempel1: </b><br>
     <span>
     let a = 5; <br>
