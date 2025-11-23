@@ -1,0 +1,48 @@
+div.notesPage {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr; 
+    grid-template-areas: 'menu notes';
+
+}
+
+div.menu {
+    grid-area: menu;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: black solid 2px;
+}
+
+div.notes {
+    grid-area: notes; 
+
+}
+
+button.menuButton {
+    border: none;
+    background-color: #f7f7ef;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button.menuButton:hover {
+    background-color: #cacac2;
+}
+
+section {
+    border: black solid 2px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+span {
+    font-family:monospace;
+    background-color: #f8f88a;
+    font-weight: bold;
+}

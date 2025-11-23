@@ -1,6 +1,6 @@
 body {
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f7f7ef;
     margin: 0;
     padding: 0;
 }
@@ -8,11 +8,11 @@ body {
 div.container {
     display: grid; 
     height: 100vh;
-    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto 1fr 25px;
-    grid-template-areas:    'header header header header'
-                            'leftMargin menu mainContent rightMargin'
-                            'footer footer footer footer'
+    grid-template-areas:    'header'
+                            'mainContent'
+                            'footer'
                             ;
 }
 
@@ -21,22 +21,10 @@ div.header {
     text-align: center;
 }
 
-div.menu {
-    grid-area: menu;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    border: black solid 2px;
-    background-color: darkkhaki;
-}
 
 div.mainContent {
     grid-area: mainContent;
-    background-color: darksalmon;
     margin-right: 5px;
-    border-radius: 10px;
-    border: black solid 2px;
     padding-right: 5px;
     max-width: 600px;
 }
@@ -55,39 +43,38 @@ div.leftMargin {
 }
 
 h1 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    color:rgb(59, 9, 9);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: lighter;
+    color:black;
+    padding-top: 0;
+    margin-top: 10px;
     /* text-transform: capitalize; */
-    text-shadow: darkkhaki 2px 2px, darksalmon 4px 3px;
+    /* text-shadow: darkkhaki 2px 2px, darkgray 4px 3px; */
 }
 
-span {
-    font-family:monospace;
-    background-color: rgba(128, 255, 0, 0.714);
-    font-weight: bold;
+
+
+div.buttonsDiv {
+    padding: 50px;
+    padding-bottom: 0;
 }
 
-button {
-    background-color: antiquewhite;
-    font-weight: bold;
-    border: darksalmon solid 1px;
-    max-height: 40px;
-}
-
-button:hover {
-    cursor: pointer;
-    border: black 2px solid;
-    background-color: darksalmon;
-}
-
-section {
-    border: black solid 2px;
-    border-radius: 5px;
-    margin: 5px;
+button.header {
+    border: none;
+    background-color: #f7f7ef;
     padding: 10px;
-    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
 }
+
+button.header:hover {
+    background-color:#cacac2;
+}
+
+
 
 div.activeNotes {
     grid-area: activeNotes;

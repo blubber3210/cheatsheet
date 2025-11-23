@@ -20,19 +20,25 @@ function updateView(){
     app.innerHTML = `
     <div class="header">${drawHeader()}</div>
     
+    <div class="mainContent">
     ${content}
-    
+    </div>
+
     <div class="footer">${drawFooter()}</div>
     `; 
 }
 
 function drawHeader(){
-    let html = `<div class="header"><h1>cheatsheet</h1></div>
-    <button onclick="changePage('homePage')">home</button>
-    <button onclick="changePage('jsPage')">javascript</button>
-    <button onclick="changePage('cSharpPage')">c#</button>
-    <button onclick="changePage('updateNotesPage')">update log</button>
-    
+    let html = `
+    <div class="buttonsDiv">
+        <button class="header" onclick="changePage('homePage')">home</button>
+        <button class="header" onclick="changePage('jsPage')">javascript</button>
+        <button class="header" onclick="changePage('cSharpPage')">c#</button>
+        <button class="header" onclick="changePage('updateNotesPage')">update log</button>
+    </div>
+    <div>
+    <h1>cheatsheet</h1>
+    </div>
     `;
 
     return html;

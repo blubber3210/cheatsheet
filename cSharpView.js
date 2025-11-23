@@ -1,50 +1,46 @@
 
+
 function drawCSharpPage(){
     let html = /*HTML*/`
-    <div class="menu">
-    <b>examples</b><br>
-    <button onclick="">incoming</button><br>
+    <div class="notesPage">
+        <div class="menu">
+            <b>examples</b><br>
+            <button class="menuButton" onclick="">incoming</button><br>
 
-    <br>
-    <b>codeAcademy:</b><br>
-    <button onclick="">incoming</button><br>
-    <button onclick="">incoming</button><br>
-    
-    <br>
-    <b>skillShare:</b> <br>
-    <button>incoming</button> <br>
-    <br>
-    <b>Moodle:</b> <br>
-    <button onclick="">incoming</button><br>
-    <br>
-    <b>-</b><br>
-    <button onclick="clearContent()">clear</button><br>
-    </div> 
-    <div class="mainContent">
-    
-    <div>${content}</div>
+            <br>
+            <b>codeAcademy:</b><br>
+            <button class="menuButton" onclick="">incoming</button><br>
+            <button class="menuButton" onclick="">incoming</button><br>
 
-    <div class="activeNotes">
-    <section>
-    hay que hacer la tarea y llenar esta pagina con algo sobre c#
-    </section>
+            <br>
+            <b>skillShare:</b> <br>
+            <button class="menuButton"> incoming</button> <br>
+            <br>
+            <b>Moodle:</b> <br>
+            <button class="menuButton" onclick="">incoming</button><br>
+            <br>
+            <b>-</b><br>
+            <button class="menuButton" onclick="clearContent()">clear</button><br>
+        </div> 
+    
+        <div class="notes">
+            <section>    
+                ${content}
+            </section>
+            <section>
+                hay que hacer la tarea y llenar esta pagina con algo sobre c#
+            </section>
+            <section>
+                <b>links</b><br>
+                <a href="https://getacademy.moodlecloud.com/mod/wiki/view.php?id=1212">Moodle oversikt</a>
+            </section>
+        </div>
     </div>
-
-
-    <section>
-    <b>links</b><br>
-    <a href="https://getacademy.moodlecloud.com/mod/wiki/view.php?id=1212">Moodle oversikt</a>
-    </section>
-    </div>
-
-    
-    <div class="rightMargin"></div>
-    <div class="leftMargin"></div>
-    
     `;
 
     return html; 
 }
+
 
 // ASCII RANGES (IMPORTANT PARTS)
 

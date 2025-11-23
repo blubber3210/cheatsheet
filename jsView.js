@@ -1,52 +1,38 @@
-
-
 function drawJSView(){
     let html =/*HTML*/ `
-    <div></div>
-    <div class="menu">
-    <b>examples</b><br>
-    <button onclick="fontsExampleHtml()">fonts</button><br>
+    <div class="notesPage">
+        <div class="menu">
+            <b>examples</b><br>
+            <button class="menuButton" onclick="fontsExampleHtml()">fonts</button><br>
 
-    <br>
-    <b>codeAcademy:</b><br>
-    <button onclick="falsyHtml()">falsy/truthy</button><br>
-    <button onclick="ifElseHtml()">if/else etc</button><br>
-    <button onclick="funksjonerHtml()">functions</button><br>
-    
-    <br>
-    <b>skillShare:</b> <br>
-    <button>incoming</button> <br>
-    <br>
-    <b>Moodle:</b> <br>
-    <button onclick="gridsHtml()">grids</button><br>
-    <button onclick="stringMethodsHtml()">string methods</button><br>
-    <button onclick="dataTypeHtml()">datatyper og<br>operatorer</button><br>
-    <br>
-    <b>-</b><br>
-    <button onclick="clearContent()">clear</button><br>
-    </div> 
-    <div class="mainContent">
-    
-    <div>${content}</div>
+            <br>
+            <b>codeAcademy:</b><br>
+            <button class="menuButton" onclick="falsyHtml()">falsy/truthy</button><br>
+            <button class="menuButton" onclick="ifElseHtml()">if/else etc</button><br>
+            <button class="menuButton" onclick="funksjonerHtml()">functions</button><br>
 
-    <div class="activeNotes">
-
-    ${scopeHtml()}
-
+            <br>
+            <b>skillShare:</b> <br>
+            <button class="menuButton">incoming</button> <br>
+            <br>
+            <b>Moodle:</b> <br>
+            <button class="menuButton" onclick="gridsHtml()">grids</button><br>
+            <button class="menuButton" onclick="stringMethodsHtml()">string methods</button><br>
+            <button class="menuButton" onclick="dataTypeHtml()">datatyper og<br>operatorer</button><br>
+            <br>
+            <b>-</b><br>
+            <button class="menuButton" onclick="clearContent()">clear</button><br>
+        </div> 
+        <div class="notes">
+            ${content}
+            
+            ${scopeHtml()} 
+            <section>
+                <b>links</b><br>
+                <a href="https://getacademy.moodlecloud.com/mod/wiki/view.php?id=1212">Moodle oversikt</a>
+            </section>
+        </div>
     </div>
-
-
-    <section>
-    <b>links</b><br>
-    <a href="https://getacademy.moodlecloud.com/mod/wiki/view.php?id=1212">Moodle oversikt</a>
-    </section>
-    </div>
-
-    
-    <div class="rightMargin"></div>
-    <div class="leftMargin"></div>
-
-    
     `;
 
     return html;
