@@ -45,7 +45,7 @@ function drawHeader(){
 }
 
 function drawFooter(){
-    let html = `latest update: 23.11.2025 by Lidus`;
+    let html = `latest update: 24.11.2025`;
 
     return html;
 }
@@ -54,6 +54,11 @@ function drawHomePage(){
     let html = `homePage<br>
     - navigate to notes via buttons above <br>
     - running updates in update log <br>
+    Errors: <br>
+    "content" stays the same on both js and c# view <br>
+    (have to update and streamline models with all functions from previous setup <br>
+    ie. multiple bugs that don't fit with the new MVC)<br>
+    focusing on C# the next two months, will get back to this after.
     
     `;
 
