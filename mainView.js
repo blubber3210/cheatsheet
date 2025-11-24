@@ -37,7 +37,7 @@ function drawHeader(){
         <button class="header" onclick="changePage('updateNotesPage')">update log</button>
     </div>
     <div>
-    <h1>cheatsheet</h1>
+    <h1><img style="width: 50px;"src="images/Poodle6.png">cheatsheet</h1>
     </div>
     `;
 
@@ -53,7 +53,8 @@ function drawFooter(){
 function drawHomePage(){
     let html = `homePage<br>
     - navigate to notes via buttons above <br>
-    - running updates in update log
+    - running updates in update log <br>
+    
     `;
 
     return html;
