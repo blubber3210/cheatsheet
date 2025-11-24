@@ -64,6 +64,7 @@ div.buttonsDiv {
 
 button.header {
     border: none;
+    color: black;
     background-color: #f7f7ef;
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;

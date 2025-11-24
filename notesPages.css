@@ -37,6 +37,7 @@ div.notesLMargin {
 
 button.menuButton {
     border: none;
+    color: black;
     background-color: #f7f7ef;
     padding: 5px;
     font-family: 'Times New Roman', Times, serif;
